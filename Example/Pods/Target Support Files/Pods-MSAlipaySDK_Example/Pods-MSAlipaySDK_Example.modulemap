@@ -1,0 +1,6 @@
+framework module Pods_MSAlipaySDK_Example {
+  umbrella header "Pods-MSAlipaySDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
