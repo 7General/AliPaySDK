@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225F058120F84A4C00F057E3 /* MSAlipayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 225F058020F84A4C00F057E3 /* MSAlipayHelper.m */; };
+		225F058720F84CE400F057E3 /* MSAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225F058620F84CE400F057E3 /* MSAlipayManager.m */; };
+		225F058A20F84EE300F057E3 /* MSAlipaySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 225F058920F84EE300F057E3 /* MSAlipaySDK.m */; };
 		226C2EC920F5E80800B63187 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C2EC820F5E80800B63187 /* AppDelegate.m */; };
 		226C2ECC20F5E80800B63187 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C2ECB20F5E80800B63187 /* ViewController.m */; };
 		226C2ECF20F5E80800B63187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226C2ECD20F5E80800B63187 /* Main.storyboard */; };
@@ -41,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225F057E20F846B800F057E3 /* MSAlipayConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAlipayConfig.h; sourceTree = "<group>"; };
+		225F057F20F84A4C00F057E3 /* MSAlipayHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAlipayHelper.h; sourceTree = "<group>"; };
+		225F058020F84A4C00F057E3 /* MSAlipayHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAlipayHelper.m; sourceTree = "<group>"; };
+		225F058520F84CE400F057E3 /* MSAlipayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAlipayManager.h; sourceTree = "<group>"; };
+		225F058620F84CE400F057E3 /* MSAlipayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAlipayManager.m; sourceTree = "<group>"; };
+		225F058820F84EE300F057E3 /* MSAlipaySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAlipaySDK.h; sourceTree = "<group>"; };
+		225F058920F84EE300F057E3 /* MSAlipaySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAlipaySDK.m; sourceTree = "<group>"; };
 		226C2EC420F5E80800B63187 /* AliPaySDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliPaySDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226C2EC720F5E80800B63187 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		226C2EC820F5E80800B63187 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -189,6 +199,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225F057D20F8468A00F057E3 /* AlipayOpentTool */ = {
+			isa = PBXGroup;
+			children = (
+				225F057E20F846B800F057E3 /* MSAlipayConfig.h */,
+				225F057F20F84A4C00F057E3 /* MSAlipayHelper.h */,
+				225F058020F84A4C00F057E3 /* MSAlipayHelper.m */,
+				225F058520F84CE400F057E3 /* MSAlipayManager.h */,
+				225F058620F84CE400F057E3 /* MSAlipayManager.m */,
+				225F058820F84EE300F057E3 /* MSAlipaySDK.h */,
+				225F058920F84EE300F057E3 /* MSAlipaySDK.m */,
+			);
+			path = AlipayOpentTool;
+			sourceTree = "<group>";
+		};
 		226C2EBB20F5E80800B63187 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +233,7 @@
 		226C2EC620F5E80800B63187 /* AliPaySDK */ = {
 			isa = PBXGroup;
 			children = (
+				225F057D20F8468A00F057E3 /* AlipayOpentTool */,
 				22960B0B20F645C1006FDA1C /* Alipay */,
 				226C2EC720F5E80800B63187 /* AppDelegate.h */,
 				226C2EC820F5E80800B63187 /* AppDelegate.m */,
@@ -437,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22960B7F20F645C1006FDA1C /* RSADataVerifier.m in Sources */,
+				225F058720F84CE400F057E3 /* MSAlipayManager.m in Sources */,
 				22960B7D20F645C1006FDA1C /* openssl_wrapper.m in Sources */,
 				22960B7820F645C1006FDA1C /* base64.m in Sources */,
 				22960B7C20F645C1006FDA1C /* NSDataEx.m in Sources */,
@@ -445,8 +471,10 @@
 				22960B7720F645C1006FDA1C /* Order.m in Sources */,
 				22960B7E20F645C1006FDA1C /* RSADataSigner.m in Sources */,
 				226C2ECC20F5E80800B63187 /* ViewController.m in Sources */,
+				225F058A20F84EE300F057E3 /* MSAlipaySDK.m in Sources */,
 				226C2ED720F5E80800B63187 /* main.m in Sources */,
 				226C2EC920F5E80800B63187 /* AppDelegate.m in Sources */,
+				225F058120F84A4C00F057E3 /* MSAlipayHelper.m in Sources */,
 				22960B7920F645C1006FDA1C /* DataSigner.m in Sources */,
 				22960B7A20F645C1006FDA1C /* DataVerifier.m in Sources */,
 			);

@@ -12,7 +12,7 @@
 ///////////////////Merry Christmas=。=//////////////////
 ////////////////////////////////////////////////////////
 
-
+#import <UIKit/UIKit.h>
 #import "APayAuthInfo.h"
 
 typedef void(^CompletionBlock)(NSDictionary *resultDic);
