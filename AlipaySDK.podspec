@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'AlipaySDK'
+  s.name             = 'MSAlipaySDK'
   s.version          = '0.0.1'
   s.summary          = '支付宝支付SDK,MS'
 
