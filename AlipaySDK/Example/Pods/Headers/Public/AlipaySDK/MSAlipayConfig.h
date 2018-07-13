@@ -1,0 +1,1 @@
+../../../../../AlipaySDK/Classes/AlipayOpentTool/MSAlipayConfig.h

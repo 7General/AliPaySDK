@@ -1,0 +1,11 @@
+#use_frameworks!
+
+target 'AlipaySDK_Example' do
+  pod 'AlipaySDK', :path => '../'
+
+  target 'AlipaySDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

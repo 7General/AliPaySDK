@@ -1,0 +1,33 @@
+{
+  "name": "AlipaySDK",
+  "version": "0.0.1",
+  "summary": "支付宝支付SDK,MS",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wanghuizhou21@163.com/AlipaySDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wanghuizhou21@163.com": "wanghuizhou@guazi.com"
+  },
+  "source": {
+    "git": "https://github.com/wanghuizhou21@163.com/AlipaySDK.git",
+    "tag": "0.0.1"
+  },
+  "frameworks": [
+    "CoreTelephony",
+    "SystemConfiguration",
+    "CoreMotion"
+  ],
+  "libraries": [
+    "z",
+    "c++"
+  ],
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AlipaySDK/Classes/**/*",
+  "resources": "AlipaySDK/Boundles/AlipaySDK.bundle",
+  "vendored_frameworks": "AlipaySDK/Frameworks/AlipaySDK.framework"
+}

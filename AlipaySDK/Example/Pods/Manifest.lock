@@ -1,0 +1,16 @@
+PODS:
+  - AlipaySDK (0.0.1)
+
+DEPENDENCIES:
+  - AlipaySDK (from `../`)
+
+EXTERNAL SOURCES:
+  AlipaySDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AlipaySDK: a4679042aa03a3c83c0a4a3c025756f4af0e259d
+
+PODFILE CHECKSUM: ca575c7fb0229fdee9f02a7d2109fd4fa23008af
+
+COCOAPODS: 1.5.0.beta.1
