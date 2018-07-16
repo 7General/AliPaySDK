@@ -56,6 +56,10 @@
 
 // ios9
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    /*
+     url.host:safepay
+     alisdkdemo://safepay/?%7B%22memo%22:%7B%22result%22:%22%22,%22ResultStatus%22:%226001%22,%22memo%22:%22%E7%94%A8%E6%88%B7%E4%B8%AD%E9%80%94%E5%8F%96%E6%B6%88%22%7D,%22requestType%22:%22safepay%22%7D
+     */
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [[MSAlipayManager defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
