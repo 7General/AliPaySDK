@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSAlipaySDK'
-  s.version          = '0.0.1'
-  s.summary          = 'MSAlipaySDK BY '
+  s.version          = '0.0.2'
+  s.summary          = 'MSAlipaySDK From Alipay '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/wanghuizhou21@163.com/MSAlipaySDK'
+  s.homepage         = 'https://github.com/7General'
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wanghuizhou21@163.com' => 'wanghuizhou@guazi.com' }
