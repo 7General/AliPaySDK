@@ -1,5 +1,5 @@
 PODS:
-  - MSAlipaySDK (0.0.2)
+  - MSAlipaySDK (0.0.3)
 
 DEPENDENCIES:
   - MSAlipaySDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MSAlipaySDK: c73eba31181c5989e97b289d3600661c4cfdcf87
+  MSAlipaySDK: ce155ca2a36005fe8048c7351cd3bc0fc121900c
 
 PODFILE CHECKSUM: 8d7f1909b9e46999fa2265a65a68b722df3c2b16
 
