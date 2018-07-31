@@ -108,10 +108,10 @@
  @param payOrderString 唤起支付宝要传入的参数，
  **自行校验是否为空数据
  */
-+ (void)WakeupAliPayPay:(NSString *)payOrderString handler:(void(^)(NSDictionary *result))callHandler {
++ (void)WakeupAliPayPay:(NSString *)payOrderString fromScheme:(NSString *)scheme handler:(void(^)(NSDictionary *result))callHandler {
     if (payOrderString) {
         
-        [[AlipaySDK defaultService] payOrder:payOrderString fromScheme:MSAlipayAppScheme callback:^(NSDictionary *resultDic) {
+        [[AlipaySDK defaultService] payOrder:payOrderString fromScheme:scheme callback:^(NSDictionary *resultDic) {
             if (callHandler) {
                 callHandler(resultDic);
             }

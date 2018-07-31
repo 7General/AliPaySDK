@@ -1,6 +1,6 @@
 {
   "name": "MSAlipaySDK",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "MSAlipaySDK From Alipay",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/7General",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/7General/AliPaySDK.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "frameworks": [
     "CoreTelephony",
