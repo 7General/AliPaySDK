@@ -108,20 +108,23 @@
  @param payOrderString 唤起支付宝要传入的参数，
  **自行校验是否为空数据
  */
-+ (void)WakeupAliPayPay:(NSString *)payOrderString {
++ (void)WakeupAliPayPay:(NSString *)payOrderString handler:(void(^)(NSDictionary *result))callHandler {
     if (payOrderString) {
         
         [[AlipaySDK defaultService] payOrder:payOrderString fromScheme:MSAlipayAppScheme callback:^(NSDictionary *resultDic) {
-            NSLog(@"reslut = %@",resultDic);
-            //支付成功
-            if ([[resultDic valueForKey:@"resultStatus"]isEqualToString:@"9000"]) {
-                //[resultDic valueForKey:@"memo"];
-                //[resultDic valueForKey:@"result"];
-                
-                //更新订单状态为支付成功
-            } else {
-                //支付失败
+            if (callHandler) {
+                callHandler(resultDic);
             }
+//            NSLog(@"reslut = %@",resultDic);
+//            //支付成功
+//            if ([[resultDic valueForKey:@"resultStatus"]isEqualToString:@"9000"]) {
+//                //[resultDic valueForKey:@"memo"];
+//                //[resultDic valueForKey:@"result"];
+//
+//
+//            } else {
+//                //支付失败
+//            }
         }];
     }
 }

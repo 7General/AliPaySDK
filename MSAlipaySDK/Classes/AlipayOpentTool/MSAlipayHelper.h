@@ -24,7 +24,7 @@ typedef void(^CompletionSDKBlock)(NSDictionary *resultDic);
  @param payOrderString 唤起支付宝要传入的参数，
  **自行校验是否为空数据
  */
-+ (void)WakeupAliPayPay:(NSString *)payOrderString;
++ (void)WakeupAliPayPay:(NSString *)payOrderString handler:(void(^)(NSDictionary *result))callHandler;
 
 
 
