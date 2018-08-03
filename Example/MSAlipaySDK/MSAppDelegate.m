@@ -7,7 +7,7 @@
 //
 
 #import "MSAppDelegate.h"
-#import <MSAlipaySDK/MSAlipaySDK.h>
+#import <MSAlipaySDK/MSAlipayHelper.h>
 
 @implementation MSAppDelegate
 
@@ -47,9 +47,10 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     if ([url.host isEqualToString:@"safepay"]) {
         //跳转支付宝钱包进行支付，处理支付结果
-        [[MSAlipayManager defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        [[MSAlipayHelper defaultManager] aliPayHandlerResultURL:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"application--->>result = %@",resultDic);
         }];
+
     }
     return YES;
 }
@@ -62,7 +63,7 @@
      */
     if ([url.host isEqualToString:@"safepay"]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
-        [[MSAlipayManager defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        [[MSAlipayHelper defaultManager] aliPayHandlerResultURL:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"application--->>result = result = %@",resultDic);
         }];
     }

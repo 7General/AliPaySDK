@@ -7,7 +7,7 @@
 //
 
 #import "MSViewController.h"
-#import <MSAlipaySDK/MSAlipaySDK.h>
+#import <MSAlipaySDK/MSAlipayHelper.h>
 
 @interface MSViewController ()
 

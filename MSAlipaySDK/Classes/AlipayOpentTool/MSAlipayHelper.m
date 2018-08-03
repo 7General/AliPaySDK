@@ -15,6 +15,9 @@
 //#import "Order.h"
 //#import "DataSigner.h"
 
+
+
+
 @interface MSAlipayHelper()
 
 @property (nonatomic, copy) void (^aliPayResult) (BOOL result);
@@ -162,6 +165,15 @@
             }
         }];
     }
+}
+
+
+- (void)aliPayHandlerResultURL:(NSURL *)url standbyCallback:(CompletionSDKBlock)completionBlock {
+    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        if (completionBlock) {
+            completionBlock(resultDic);
+        }
+    }];
 }
 
 @end

@@ -8,14 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0974AF1AE80046EB398BE69B2F97B050 /* Pods-MSAlipaySDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB71C819B063529292DC35458336E90 /* Pods-MSAlipaySDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15D72F4C26982118BB53CE7356144F37 /* MSAlipaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FED4A70687D340E900E6D02CE27EF0CB /* MSAlipaySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1856D9759CC939430244D2AE9A8188F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5B7397A313CF5F2DB973B47CBA30C /* Foundation.framework */; };
 		1917A52046D9D7CAAE577401A1E040D3 /* MSAlipaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2653B71C3504CFCB0545A17BC0AB28 /* MSAlipaySDK-dummy.m */; };
 		1A5782C36F69167474981923A63D53DD /* MSAlipayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7898025B45A48500B2A9B189582D545B /* MSAlipayHelper.m */; };
 		22A3B9E0E1E5423383AE2EAE6DB9F0D9 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60A24DA4322A9E207FAC76B14584A086 /* AlipaySDK.bundle */; };
-		3029F8D5996B9D5B2024BD8350581D4F /* MSAlipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 530D51A26C2775C9573E4D77BD57D52C /* MSAlipayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		352BD7B5438F8BE6A567E9A3EC98836E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E32129C43F702B405D91CEB606B94 /* CoreTelephony.framework */; };
-		4C5D2903A03FA484833DEE7C976C372F /* MSAlipaySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 898E9F48417FCCF9B9364C4F4ADE302E /* MSAlipaySDK.m */; };
 		54F97BFD5E2D6F13852EC62C3B1D5EAB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270C5A701388220F352A553C52E7BE4B /* SystemConfiguration.framework */; };
 		5E20E2C36C535A9CDE9878A8F8DB9AB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5B7397A313CF5F2DB973B47CBA30C /* Foundation.framework */; };
 		783D9CD2CACD5862A7408CACA7951078 /* MSAlipaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9E98E7DF4EEE37DF2139DCB207C618 /* MSAlipaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,7 +23,6 @@
 		C9A77E3136A64C97D0D3567214269FD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5B7397A313CF5F2DB973B47CBA30C /* Foundation.framework */; };
 		D1908727345D65D5B319725170D169C2 /* Pods-MSAlipaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95071A570630360DFA38FB76938FEF32 /* Pods-MSAlipaySDK_Example-dummy.m */; };
 		DB7F01FB483E158D60EEC1EBD2EB2F28 /* MSAlipayConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E937A31D8DDD2A3BCB7249F97210FECF /* MSAlipayConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E35F9388B6F8A67481F628E5773A14BD /* MSAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF83F1BE60DEDD1A6D48620FDB0BD6C6 /* MSAlipayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,18 +41,17 @@
 		07EF88CAAEA96204E8B1E311FBFBF5AE /* MSAlipaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAlipaySDK-prefix.pch"; sourceTree = "<group>"; };
 		1434B3BA0C706FF4D2AF2685E55DE1BB /* Pods-MSAlipaySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSAlipaySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		197B8C24379C38D1BBCEA4B55C4CF715 /* Pods-MSAlipaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAlipaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E3DA4EF1A0D21E47C94E90DBFD8D52F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1E3DA4EF1A0D21E47C94E90DBFD8D52F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		270C5A701388220F352A553C52E7BE4B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		32A01DD8E96ECE8DA898E5402BBE323F /* Pods-MSAlipaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAlipaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3A2E20136606FA5C5F5EB27645CB4F58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB71C819B063529292DC35458336E90 /* Pods-MSAlipaySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSAlipaySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4DCB514CA7568EE4509169B7F2E285F9 /* Pods-MSAlipaySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSAlipaySDK_Example.modulemap"; sourceTree = "<group>"; };
 		4EF5B7397A313CF5F2DB973B47CBA30C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		530D51A26C2775C9573E4D77BD57D52C /* MSAlipayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAlipayManager.h; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipayManager.h; sourceTree = "<group>"; };
 		5555F69EA44DC65056B87FF646B1985E /* Pods-MSAlipaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSAlipaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5E96B829ADACE7C718CFF8B43B4775C7 /* Pods_MSAlipaySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MSAlipaySDK_Example.framework; path = "Pods-MSAlipaySDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E96B829ADACE7C718CFF8B43B4775C7 /* Pods_MSAlipaySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSAlipaySDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A24DA4322A9E207FAC76B14584A086 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = MSAlipaySDK/Boundles/AlipaySDK.bundle; sourceTree = "<group>"; };
-		620FD60191882ECC1F26898FDACE87E4 /* Pods_MSAlipaySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MSAlipaySDK_Tests.framework; path = "Pods-MSAlipaySDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620FD60191882ECC1F26898FDACE87E4 /* Pods_MSAlipaySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSAlipaySDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		674D214171CDC02A1B5E5DF624E0D8BB /* Pods-MSAlipaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSAlipaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6B671B89016726709F501C4AA11AC4C3 /* Pods-MSAlipaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSAlipaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6D2653B71C3504CFCB0545A17BC0AB28 /* MSAlipaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAlipaySDK-dummy.m"; sourceTree = "<group>"; };
@@ -64,28 +59,25 @@
 		6F39F16A115DE2F42525FE05ACF957F3 /* Pods-MSAlipaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAlipaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		7003F6DDAA50135EEFF1DB94504FE71B /* Pods-MSAlipaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAlipaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7898025B45A48500B2A9B189582D545B /* MSAlipayHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAlipayHelper.m; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipayHelper.m; sourceTree = "<group>"; };
-		81091E82AA37AC4E53DF342838E9045F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		81091E82AA37AC4E53DF342838E9045F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8831D32E69B1FD585765FAD549728F80 /* Pods-MSAlipaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSAlipaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		898E9F48417FCCF9B9364C4F4ADE302E /* MSAlipaySDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAlipaySDK.m; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipaySDK.m; sourceTree = "<group>"; };
 		8B7425E00FEF26FBAC9A9020BF016BAB /* Pods-MSAlipaySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSAlipaySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8BD1DB3CCAB1BE9EF9FD686BF6B30B8F /* MSAlipayHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAlipayHelper.h; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipayHelper.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95071A570630360DFA38FB76938FEF32 /* Pods-MSAlipaySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAlipaySDK_Example-dummy.m"; sourceTree = "<group>"; };
 		9BB8DB13FED61D3934601AE7BA456F31 /* Pods-MSAlipaySDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSAlipaySDK_Tests-resources.sh"; sourceTree = "<group>"; };
 		ABADDB2BAC27E5B594387BD2784E3568 /* MSAlipaySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSAlipaySDK.xcconfig; sourceTree = "<group>"; };
 		AFFA1107DBE2F14F737E1EA26854815D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4EDED933D3B4D4C0E46D1BBE5B48034 /* MSAlipaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MSAlipaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B4EDED933D3B4D4C0E46D1BBE5B48034 /* MSAlipaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MSAlipaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCF64B5A60D6A7730E3E026551103B72 /* Pods-MSAlipaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAlipaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C5823259EDC5F38348CB4111B6AC2B71 /* Pods-MSAlipaySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSAlipaySDK_Tests.modulemap"; sourceTree = "<group>"; };
-		CA70C4635ED7F65E8D9E44DE28A0DD2E /* MSAlipaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSAlipaySDK.framework; path = MSAlipaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA70C4635ED7F65E8D9E44DE28A0DD2E /* MSAlipaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSAlipaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F416EDD89B9D912132638F2F4B2F49 /* MSAlipaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSAlipaySDK.modulemap; sourceTree = "<group>"; };
 		E937A31D8DDD2A3BCB7249F97210FECF /* MSAlipayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAlipayConfig.h; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipayConfig.h; sourceTree = "<group>"; };
 		F41E32129C43F702B405D91CEB606B94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		F580A8D253E0CDE4A8D72200FB39A558 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = MSAlipaySDK/Frameworks/AlipaySDK.framework; sourceTree = "<group>"; };
 		FCCD4BC30FB428426AD82F308276840B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		FD9E98E7DF4EEE37DF2139DCB207C618 /* MSAlipaySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAlipaySDK-umbrella.h"; sourceTree = "<group>"; };
-		FED4A70687D340E900E6D02CE27EF0CB /* MSAlipaySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAlipaySDK.h; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipaySDK.h; sourceTree = "<group>"; };
-		FF83F1BE60DEDD1A6D48620FDB0BD6C6 /* MSAlipayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAlipayManager.m; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipayManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,10 +165,6 @@
 				E937A31D8DDD2A3BCB7249F97210FECF /* MSAlipayConfig.h */,
 				8BD1DB3CCAB1BE9EF9FD686BF6B30B8F /* MSAlipayHelper.h */,
 				7898025B45A48500B2A9B189582D545B /* MSAlipayHelper.m */,
-				530D51A26C2775C9573E4D77BD57D52C /* MSAlipayManager.h */,
-				FF83F1BE60DEDD1A6D48620FDB0BD6C6 /* MSAlipayManager.m */,
-				FED4A70687D340E900E6D02CE27EF0CB /* MSAlipaySDK.h */,
-				898E9F48417FCCF9B9364C4F4ADE302E /* MSAlipaySDK.m */,
 				482D52F5953AB6F609B7BA7BFAC32A37 /* Frameworks */,
 				F4F26AF85F4B486905D5B6B6B7AAC881 /* Pod */,
 				A64D90549FFB96C876C7BFBBC6FFE8CA /* Resources */,
@@ -296,9 +284,7 @@
 			files = (
 				DB7F01FB483E158D60EEC1EBD2EB2F28 /* MSAlipayConfig.h in Headers */,
 				A6ABE9EF06C4917FBA5537319A699AA9 /* MSAlipayHelper.h in Headers */,
-				3029F8D5996B9D5B2024BD8350581D4F /* MSAlipayManager.h in Headers */,
 				783D9CD2CACD5862A7408CACA7951078 /* MSAlipaySDK-umbrella.h in Headers */,
-				15D72F4C26982118BB53CE7356144F37 /* MSAlipaySDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5782C36F69167474981923A63D53DD /* MSAlipayHelper.m in Sources */,
-				E35F9388B6F8A67481F628E5773A14BD /* MSAlipayManager.m in Sources */,
 				1917A52046D9D7CAAE577401A1E040D3 /* MSAlipaySDK-dummy.m in Sources */,
-				4C5D2903A03FA484833DEE7C976C372F /* MSAlipaySDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

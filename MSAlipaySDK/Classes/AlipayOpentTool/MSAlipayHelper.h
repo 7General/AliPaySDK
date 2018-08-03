@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef void(^CompletionSDKBlock)(NSDictionary *resultDic);
+
 @interface MSAlipayHelper : NSObject
 
 + (instancetype)defaultManager;
@@ -38,6 +41,14 @@
 - (void)WakeupAliPayPay:(NSString *)payOrderString fromScheme:(NSString *)scheme handler:(void(^)(NSDictionary *result))callHandler;
 
 
+
+/**
+ 支付结果回调
+
+ @param resultUrl handelrURL
+ @param completionBlock 支付结果回调Block
+ */
+- (void)aliPayHandlerResultURL:(NSURL *)resultUrl standbyCallback:(CompletionSDKBlock)completionBlock;
 
 
 

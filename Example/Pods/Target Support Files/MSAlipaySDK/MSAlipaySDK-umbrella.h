@@ -12,8 +12,8 @@
 
 #import "MSAlipayConfig.h"
 #import "MSAlipayHelper.h"
-#import "MSAlipayManager.h"
-#import "MSAlipaySDK.h"
+
+
 
 FOUNDATION_EXPORT double MSAlipaySDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char MSAlipaySDKVersionString[];
