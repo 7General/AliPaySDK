@@ -15,8 +15,25 @@
 //#import "Order.h"
 //#import "DataSigner.h"
 
+@interface MSAlipayHelper()
+
+@property (nonatomic, copy) void (^aliPayResult) (BOOL result);
+@property (nonatomic, strong) NSString *aliPayAppKey;
+
+@end
+
 
 @implementation MSAlipayHelper
+
++ (instancetype)defaultManager {
+    static dispatch_once_t onceToken;
+    static MSAlipayHelper *instance;
+    dispatch_once(&onceToken, ^{
+        instance = [[MSAlipayHelper alloc] init];
+    });
+    return instance;
+}
+
 
 /**
  测试阿里支付，所有的参数自己通过demo请求获取
@@ -110,21 +127,39 @@
  */
 + (void)WakeupAliPayPay:(NSString *)payOrderString fromScheme:(NSString *)scheme handler:(void(^)(NSDictionary *result))callHandler {
     if (payOrderString) {
-        
         [[AlipaySDK defaultService] payOrder:payOrderString fromScheme:scheme callback:^(NSDictionary *resultDic) {
             if (callHandler) {
                 callHandler(resultDic);
             }
-//            NSLog(@"reslut = %@",resultDic);
-//            //支付成功
-//            if ([[resultDic valueForKey:@"resultStatus"]isEqualToString:@"9000"]) {
-//                //[resultDic valueForKey:@"memo"];
-//                //[resultDic valueForKey:@"result"];
-//
-//
-//            } else {
-//                //支付失败
-//            }
+        }];
+    }
+}
+
+/**
+ 唤起支付宝支付
+ 
+ @param payOrderString 唤起支付宝要传入的参数，
+ @param scheme void
+ */
+- (void)WakeupAliPayPay:(NSString *)payOrderString fromScheme:(NSString *)scheme {
+    if (payOrderString) {
+        [[AlipaySDK defaultService] payOrder:payOrderString fromScheme:scheme callback:nil];
+    }
+}
+
+/**
+ 唤起支付宝支付
+ 
+ @param payOrderString 唤起支付宝要传入的参数，
+ @param scheme URL Types
+ @param callHandler 支付结果回调Block，用于wap支付结果回调（非跳转钱包支付）
+ */
+- (void)WakeupAliPayPay:(NSString *)payOrderString fromScheme:(NSString *)scheme handler:(void(^)(NSDictionary *result))callHandler {
+    if (payOrderString) {
+        [[AlipaySDK defaultService] payOrder:payOrderString fromScheme:scheme callback:^(NSDictionary *resultDic) {
+            if (callHandler) {
+                callHandler(resultDic);
+            }
         }];
     }
 }
