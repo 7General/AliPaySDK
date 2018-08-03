@@ -22,7 +22,6 @@
 		BAA9D742BB1998FA3295CC525465C152 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCD4BC30FB428426AD82F308276840B /* CoreMotion.framework */; };
 		C9A77E3136A64C97D0D3567214269FD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5B7397A313CF5F2DB973B47CBA30C /* Foundation.framework */; };
 		D1908727345D65D5B319725170D169C2 /* Pods-MSAlipaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95071A570630360DFA38FB76938FEF32 /* Pods-MSAlipaySDK_Example-dummy.m */; };
-		DB7F01FB483E158D60EEC1EBD2EB2F28 /* MSAlipayConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E937A31D8DDD2A3BCB7249F97210FECF /* MSAlipayConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +72,6 @@
 		C5823259EDC5F38348CB4111B6AC2B71 /* Pods-MSAlipaySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSAlipaySDK_Tests.modulemap"; sourceTree = "<group>"; };
 		CA70C4635ED7F65E8D9E44DE28A0DD2E /* MSAlipaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSAlipaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F416EDD89B9D912132638F2F4B2F49 /* MSAlipaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSAlipaySDK.modulemap; sourceTree = "<group>"; };
-		E937A31D8DDD2A3BCB7249F97210FECF /* MSAlipayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAlipayConfig.h; path = MSAlipaySDK/Classes/AlipayOpentTool/MSAlipayConfig.h; sourceTree = "<group>"; };
 		F41E32129C43F702B405D91CEB606B94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		F580A8D253E0CDE4A8D72200FB39A558 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = MSAlipaySDK/Frameworks/AlipaySDK.framework; sourceTree = "<group>"; };
 		FCCD4BC30FB428426AD82F308276840B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
@@ -162,7 +160,6 @@
 		64B8939FD55C0EF261DF173EF5E0E009 /* MSAlipaySDK */ = {
 			isa = PBXGroup;
 			children = (
-				E937A31D8DDD2A3BCB7249F97210FECF /* MSAlipayConfig.h */,
 				8BD1DB3CCAB1BE9EF9FD686BF6B30B8F /* MSAlipayHelper.h */,
 				7898025B45A48500B2A9B189582D545B /* MSAlipayHelper.m */,
 				482D52F5953AB6F609B7BA7BFAC32A37 /* Frameworks */,
@@ -282,7 +279,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7F01FB483E158D60EEC1EBD2EB2F28 /* MSAlipayConfig.h in Headers */,
 				A6ABE9EF06C4917FBA5537319A699AA9 /* MSAlipayHelper.h in Headers */,
 				783D9CD2CACD5862A7408CACA7951078 /* MSAlipaySDK-umbrella.h in Headers */,
 			);

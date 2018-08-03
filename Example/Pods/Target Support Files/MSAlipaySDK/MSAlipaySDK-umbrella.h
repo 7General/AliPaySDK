@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "MSAlipayConfig.h"
+
 #import "MSAlipayHelper.h"
 
 

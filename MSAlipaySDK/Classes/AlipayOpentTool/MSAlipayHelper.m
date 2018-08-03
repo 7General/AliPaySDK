@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MSAlipayHelper.h"
 #import <AlipaySDK/AlipaySDK.h>
-#import "MSAlipayConfig.h"
+
 //#import <AlipaySDK/AlipaySDK.h>
 //
 //#import "Order.h"
